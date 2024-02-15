@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-primary: #f9f4fb;
+    --bg-secondary: #343193;
+    --bg-card: #FFFFFF;
+    
+    --fc-pink: #B52184;
+    --fc-blue: #312D64;
+    --fc-white: #FFFFFF;
+    
+    --ff-primary: "Mulish", sans-serif;
+    font-size: 62.5%;
+    
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+body * {
+    font-family: var(--ff-primary);
+    font-size: 1.6rem;
+}
+
+body {
+    background-color: var(--bg-primary);
+}
+
+header {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+}
+
+.astronuat1 {
+    align-items: center;
+    width: 35.4rem;
+    height: 37rem;
+    margin: 0 3.2rem;
+}
+
+header h1 {
+    text-align: center;
+    margin-top: 1.6rem;
+
+    font-size: 3.2rem;
+    font-weight: 900;
+    color: var(--fc-pink);
+}
+
+header p {
+    text-align: center;
+    margin-top: .5rem;
+
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--fc-blue);
+}
+
+.arrow {
+    max-width: 58.5rem;
+    max-height: 10.5rem;
+
+    margin-top: 3.5rem;
+}
+
+#app {
+    margin: 9.3rem auto 7.8rem;
+    background-color: var(--bg-secondary);
+    gap: 5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    display: grid;
+    justify-content: center;
+}
+
+.card {
+    background-color: var(--bg-card);
+    max-width: 35rem;
+    padding: 2.6rem;
+    border-radius: 1.9rem;
+}
+
+.card img {
+    margin-bottom: 3.3rem;
+}
+
+.card h1 {
+    font-size: 2.9rem;
+    font-weight: 900;
+    color: var(--fc-pink);
+    margin-bottom: 1.9rem;
+}
+
+.card p {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--fc-blue);
+}
+
+.input-form {
+    display: grid;
+    justify-content: center;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+
+legend {
+    font-size: 3.2rem;
+    font-weight: 900;
+    color: var(--fc-pink);
+    margin-bottom: 4.3rem;
+}
+
+input {
+    width: 35rem;
+    margin-bottom: 2.3rem;
+    padding: 1.2rem 1.4rem;
+
+    background-color: var(--bg-primary);
+    border: 2px solid var(--fc-blue);
+    border-radius: 1.6rem;
+}
+
+input::placeholder {
+    color: var(--fc-blue);
+    font-size: 1.6rem;
+    font-weight: 600;
+    font-family: var(--ff-primary);
+}
+
+input#message {
+    height: 12.6rem;
+}
+
+button {
+    border: none;
+    border-radius: 1.7rem;
+    background-color: var(--bg-secondary);
+
+    font-family: var(--ff-primary);
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--fc-white);
+    padding: 1.6rem;
+
+    width: 17rem;
+
+    margin-bottom: 6.5rem;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--bg-secondary);
+    padding: 3.2rem;
+
+    color: var(--fc-white);
+    font-size: 1.9rem;
+    font-weight: 600;
+}
